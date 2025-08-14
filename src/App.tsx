@@ -16,6 +16,7 @@ import BankingSolution from "./pages/BankingSolution";
 import BorderSolution from "./pages/BorderSolution";
 import Noticias from "./pages/Noticias";
 import NoticiaDetalhe from "./pages/NoticiaDetalhe"; 
+import ScrollProgressBar from "@/components/ScrollProgressBar";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <ScrollProgressBar />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/solucoes" element={<Solutions />} />
