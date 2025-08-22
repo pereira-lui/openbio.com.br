@@ -105,50 +105,53 @@ const BorderSolution = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6  mx-auto">
             {/* Device Image 1 */}
             <motion.div
-              className="bg-black rounded-lg items-center justify-center"
+              className=" rounded-lg items-center justify-center"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <div className="relative rounded-lg overflow-hidden h-[600px] bg-cover bg-center bg-black" style={{
+              <div className="relative rounded-lg overflow-hidden h-[360px] md:h-[480px] lg:h-[600px] bg-cover bg-center bg-black" style={{
                 backgroundImage: 'url(/lovable-uploads/realpass.png)',
                 backgroundPosition: 'center top',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover'
               }}></div>
+              <h2 className='text-lg md:text-xl  text-black  font-semibold pt-3 pb-3 rounded-lg mt-4'>Dispositivo</h2>
             </motion.div>
 
             {/* Device Image 2 */}
             <motion.div
-              className="bg-gray-200 rounded-lg items-center justify-center"
+              className=" rounded-lg items-center justify-center"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: true }}
             >
-              <div className="relative rounded-lg overflow-hidden h-[600px] bg-cover bg-center bg-black" style={{
+              <div className="relative rounded-lg overflow-hidden h-[360px] md:h-[480px] lg:h-[600px] bg-cover bg-center bg-black" style={{
                 backgroundImage: 'url(/lovable-uploads/realpass2.png)',
                 backgroundPosition: 'center top',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover'
               }}></div>
+               <h2 className='text-lg md:text-xl  text-black  font-semibold pt-3 pb-3 rounded-lg mt-4'>Dispositivo</h2>
             </motion.div>
 
             {/* Device Image 3 */}
             <motion.div
-              className="bg-gray-200 rounded-lg items-center justify-center"
+              className=" rounded-lg items-center justify-center"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="relative rounded-lg overflow-hidden h-[600px] bg-cover bg-center bg-black" style={{
+              <div className="relative rounded-lg overflow-hidden h-[360px] md:h-[480px] lg:h-[600px] bg-cover bg-center bg-black" style={{
                 backgroundImage: 'url(/lovable-uploads/realpass3.png)',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover'
               }}></div>
+               <h2 className='text-lg md:text-xl  text-black  font-semibold pt-3 pb-3 rounded-lg mt-4 '>Dispositivo</h2>
             </motion.div>
           </div>
         </div>

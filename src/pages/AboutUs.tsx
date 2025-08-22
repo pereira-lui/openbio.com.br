@@ -9,6 +9,18 @@ import { AnimatedSection } from '@/components/motion/AnimatedSection';
 import { AnimatedCard } from '@/components/motion/AnimatedCard';
 import Timeline from '@/components/Timeline';
 
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
+import { noticias } from "@/data/noticias";
+import { NoticiaCard } from "@/components/NoticiaCard";
+
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-black text-white font-objective">
@@ -138,7 +150,7 @@ const AboutUs = () => {
         <div className="w-10/12 mx-auto text-center">
           <AnimatedSection animation="fadeIn">
             <h2 className="text-white font-bold text-2xl mb-6 lg:text-4xl">
-              Operação do Norte e Sul
+              Operação de norte a sul
             </h2>
           </AnimatedSection>
 
@@ -167,54 +179,41 @@ const AboutUs = () => {
 
       {/* News Section */}
       <section className="bg-gray-100 py-10 px-5 lg:py-20">
-        <div className="w-10/12 mx-auto">
-          <AnimatedSection animation="slideUp" className="flex justify-between items-center mb-6 lg:mb-12">
+        <div className="mx-auto w-10/12">
+          <AnimatedSection
+            animation="slideUp"
+            className="flex justify-between items-center mb-6 lg:mb-12"
+          >
             <h2 className="text-[#7918f9] font-medium text-lg lg:text-3xl">
               Últimas Notícias
             </h2>
-            <div className="flex items-center">
-              <motion.button
-                className="w-6 h-6 bg-gray-300 flex items-center justify-center border border-gray-300 rounded-full mr-2 lg:w-8 lg:h-8 hover:bg-[#7918f9]"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" /><path fill="currentColor" d="M3.283 10.94a1.5 1.5 0 0 0 0 2.12l5.656 5.658a1.5 1.5 0 1 0 2.122-2.122L7.965 13.5H19.5a1.5 1.5 0 0 0 0-3H7.965l3.096-3.096a1.5 1.5 0 1 0-2.122-2.121z" /></g></svg>
-              </motion.button>
-              <motion.button
-                className="w-6 h-6 bg-gray-300 flex items-center justify-center border border-gray-300 rounded-full lg:w-8 lg:h-8 hover:bg-[#7918f9]"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" /><path fill="currentColor" d="m15.06 5.283l5.657 5.657a1.5 1.5 0 0 1 0 2.12l-5.656 5.658a1.5 1.5 0 0 1-2.122-2.122l3.096-3.096H4.5a1.5 1.5 0 0 1 0-3h11.535L12.94 7.404a1.5 1.5 0 0 1 2.122-2.121Z" /></g></svg>
-              </motion.button>
-            </div>
+            {/* Os botões de navegação vão dentro do Carousel mais abaixo */}
           </AnimatedSection>
-
-          <div className="flex flex-nowrap overflow-x-auto gap-4 pb-4 lg:grid lg:grid-cols-3 lg:overflow-visible lg:pb-0">
-            <AnimatedCard delay={0}>
-              <NewsCard
-                title="TSE adquire Kits para implementar biometria em todo o país"
-                description="Por meio de contratos assinados com a empresa Advance Inovação, a Coordenação Nacional de Sistemas e Informática da Justiça Federal, já tem à disposição mais 2.500 Kits Biométricos."
-                imageSrc="/lovable-uploads/8c5ab50d-befe-4b9f-9e46-33f18a19ccb5.png"
-              />
-            </AnimatedCard>
-
-            <AnimatedCard delay={0.1}>
-              <NewsCard
-                title="Biometria, digital ID responde aos desafios de Manufacturing Analytics em 2024"
-                description="The Veris Match biometric capture systems from Advance Analytics, helping manufacturers track worker whereabouts and activities in ways that don't intrude on personal privacy, deliver efficiencies."
-                imageSrc="/lovable-uploads/2bdbac5f-cf32-42a1-b0af-c07ded74b3cd.png"
-              />
-            </AnimatedCard>
-
-            <AnimatedCard delay={0.2}>
-              <NewsCard
-                title="Integrado Biometria | Facial Recognition | Best for Banks"
-                description="The Federal Police of Brazil development 1,000 fingerprint authentication kits from tech suppliers, as part of the Border Control Security Initiative for the department to process fingerprints in every."
-                imageSrc="/lovable-uploads/4709cc25-ff72-45fb-816b-b23f5459ef4f.png"
-              />
-            </AnimatedCard>
-          </div>
+      
+          <Carousel
+            opts={{ align: "start", loop: true }}
+            className="w-full"
+          >
+            {/* padding negativo à esquerda para “colar” os cards e permitir o peek */}
+            <CarouselContent className="-ml-3">
+              {noticias.map((n) => (
+                <CarouselItem
+                  key={n.slug}
+                  // 1 card no mobile, 2 no tablet, 3 no desktop,
+                  // e 'peek' do próximo card graças ao padding (pl-3) e bases abaixo
+                  className="pl-3 basis-[85%] sm:basis-[55%] lg:basis-[33%] xl:basis-[30%]"
+                >
+                  <NoticiaCard noticia={n} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+      
+            {/* Controles à direita no desktop; abaixo no mobile */}
+            <div className="mt-6 flex justify-end gap-2">
+              <CarouselPrevious className="rounded-full bg-gray-200 text-gray-600 hover:bg-gray-300 w-9 h-9" />
+              <CarouselNext className="rounded-full bg-[#7918f9] text-white hover:bg-[#5e13c6] w-9 h-9" />
+            </div>
+          </Carousel>
         </div>
       </section>
 

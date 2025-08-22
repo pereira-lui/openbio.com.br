@@ -10,6 +10,7 @@ import { AnimatedSection } from '@/components/motion/AnimatedSection';
 import { AnimatedCard } from '@/components/motion/AnimatedCard';
 import { AnimatedButton } from '@/components/motion/AnimatedButton';
 import { useEffect, useRef, useState } from "react";
+import SecaoInstituicoes from "@/components/SecaoInstituicoes";
 
 import {
   Carousel,
@@ -157,117 +158,147 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Partners Section */}
-      <section className="bg-gray-100 py-12 px-5 lg:py-20">
-        <div className="mx-auto w-10/12">
-          <AnimatedSection animation="fadeIn">
-            <h3 className="text-center text-black text-lg mb-8 lg:text-2xl lg:mb-12 font-bold">
-              Instituições que confiam em nós
-            </h3>
-          </AnimatedSection>
+      <SecaoInstituicoes />
 
-          <AnimatedSection animation="slideUp" delay={0.2}>
-            <div className="w-full max-w-6xl 2xl:max-w-7xl mx-auto overflow-hidden">
-              <div className="flex animate-scroll-continuous gap-8 lg:gap-16">
-                {/* Primeiro conjunto de logos */}
-                <div className="flex gap-8 lg:gap-16 min-w-max">
-                  <div className="flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
-                    <img
-                      src="/lovable-uploads/ed866ebc-7aa2-4835-b2e6-2f39a991d949.png"
-                      alt="Politec"
-                      className="h-14 lg:h-14 object-contain filter transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
-                    <img
-                      src="/lovable-uploads/7a019f42-12fc-4269-98f4-6994a333ef39.png"
-                      alt="Justiça e Segurança Pública"
-                      className="h-14 lg:h-14 object-contain filter transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
-                    <img
-                      src="/lovable-uploads/48b301b1-fdf5-45a4-8b07-ebd5e7d5437e.png"
-                      alt="Tribunal Superior Eleitoral"
-                      className="h-14 lg:h-14 object-contain filter transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
-                    <img
-                      src="/lovable-uploads/9a6cbc5b-e546-4b4e-a323-a7ec9e93c2dc.png"
-                      alt="Polícia Militar"
-                      className="h-16 lg:h-20 object-contain filter transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
-                    <img
-                      src="/lovable-uploads/12db20ef-2f01-460d-87f4-83d899de7d4c.png"
-                      alt="Polícia Federal"
-                      className="h-16 lg:h-20 object-contain filter transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
-                    <img
-                      src="/lovable-uploads/53186af8-5ef3-43a3-bb4b-e8804f209203.png"
-                      alt="PGE Amapá"
-                      className="h-14 lg:h-14 object-contain filter transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
-                    <img
-                      src="/lovable-uploads/e8218c3a-9da8-4ddf-b504-a752426b6b10.png"
-                      alt="Polícia Rodoviária"
-                      className="h-16 lg:h-20 object-contain filter transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
-                    <img
-                      src="/lovable-uploads/aac75425-099b-451c-a45e-2251e27b4b05.png"
-                      alt="Polícia Civil"
-                      className="h-16 lg:h-20 object-contain filter transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
-                    <img
-                      src="/lovable-uploads/7295f75e-74c3-4c4d-8a2b-dcbc7a961a25.png"
-                      alt="Esporte e Lazer"
-                      className="h-16 lg:h-20 object-contain filter transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
-                    <img
-                      src="/lovable-uploads/dfe1f531-c15f-44f9-99ae-c52156488e7f.png"
-                      alt="Brasão Nacional"
-                      className="h-16 lg:h-20 object-contain filter transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
-                    <img
-                      src="/lovable-uploads/Logo ITEP.png"
-                      alt="ITEP"
-                      className="h-16 lg:h-20 object-contain filter transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
-                    <img
-                      src="/lovable-uploads/LogoInsti.png"
-                      alt=""
-                      className="h-14 lg:h-14 object-contain filter transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
-                    <img
-                      src="/lovable-uploads/catorio.png"
-                      alt="catorio"
-                      className="h-14 lg:h-14 object-contain filter transition-all duration-300"
-                    />
-                  </div>
-                </div>
-              </div>
+      {/* Partners Section */}
+      {/* <section className="bg-gray-100 py-12 px-5 lg:py-20">
+  <div className="mx-auto w-10/12">
+    <AnimatedSection animation="fadeIn">
+      <h3 className="text-center text-black text-lg mb-8 lg:mb-12 lg:text-2xl font-bold">
+        Instituições que confiam em nós
+      </h3>
+    </AnimatedSection>
+
+    <AnimatedSection animation="slideUp" delay={0.2}>
+      <div className="w-full max-w-6xl 2xl:max-w-7xl mx-auto overflow-hidden relative">
+
+        {}
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-gray-100 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-gray-100 to-transparent" />
+
+        {}
+        <div className="flex gap-0 animate-scroll-continuous will-change-transform">
+          
+          {}
+          <div className="flex gap-8 lg:gap-16 min-w-max">
+            {}
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/ed866ebc-7aa2-4835-b2e6-2f39a991d949.png" alt="Politec"
+                   className="h-14 lg:h-14 object-contain transition-all duration-300" />
             </div>
-          </AnimatedSection>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/7a019f42-12fc-4269-98f4-6994a333ef39.png" alt="Justiça e Segurança Pública"
+                   className="h-14 lg:h-14 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/48b301b1-fdf5-45a4-8b07-ebd5e7d5437e.png" alt="Tribunal Superior Eleitoral"
+                   className="h-14 lg:h-14 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/9a6cbc5b-e546-4b4e-a323-a7ec9e93c2dc.png" alt="Polícia Militar"
+                   className="h-16 lg:h-20 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/12db20ef-2f01-460d-87f4-83d899de7d4c.png" alt="Polícia Federal"
+                   className="h-16 lg:h-20 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/53186af8-5ef3-43a3-bb4b-e8804f209203.png" alt="PGE Amapá"
+                   className="h-14 lg:h-14 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/e8218c3a-9da8-4ddf-b504-a752426b6b10.png" alt="Polícia Rodoviária"
+                   className="h-16 lg:h-20 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/aac75425-099b-451c-a45e-2251e27b4b05.png" alt="Polícia Civil"
+                   className="h-16 lg:h-20 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/7295f75e-74c3-4c4d-8a2b-dcbc7a961a25.png" alt="Esporte e Lazer"
+                   className="h-16 lg:h-20 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/dfe1f531-c15f-44f9-99ae-c52156488e7f.png" alt="Brasão Nacional"
+                   className="h-16 lg:h-20 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/Logo ITEP.png" alt="ITEP"
+                   className="h-16 lg:h-20 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/LogoInsti.png" alt="Instituto"
+                   className="h-14 lg:h-14 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/catorio.png" alt="Cartório"
+                   className="h-14 lg:h-14 object-contain transition-all duration-300" />
+            </div>
+          </div>
+
+          {}
+          <div className="flex gap-8 lg:gap-16 min-w-max" aria-hidden="true">
+            {}
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/ed866ebc-7aa2-4835-b2e6-2f39a991d949.png" alt=""
+                   className="h-14 lg:h-14 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/7a019f42-12fc-4269-98f4-6994a333ef39.png" alt=""
+                   className="h-14 lg:h-14 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/48b301b1-fdf5-45a4-8b07-ebd5e7d5437e.png" alt=""
+                   className="h-14 lg:h-14 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/9a6cbc5b-e546-4b4e-a323-a7ec9e93c2dc.png" alt=""
+                   className="h-16 lg:h-20 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/12db20ef-2f01-460d-87f4-83d899de7d4c.png" alt=""
+                   className="h-16 lg:h-20 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/53186af8-5ef3-43a3-bb4b-e8804f209203.png" alt=""
+                   className="h-14 lg:h-14 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/e8218c3a-9da8-4ddf-b504-a752426b6b10.png" alt=""
+                   className="h-16 lg:h-20 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/aac75425-099b-451c-a45e-2251e27b4b05.png" alt=""
+                   className="h-16 lg:h-20 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/7295f75e-74c3-4c4d-8a2b-dcbc7a961a25.png" alt=""
+                   className="h-16 lg:h-20 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/dfe1f531-c15f-44f9-99ae-c52156488e7f.png" alt=""
+                   className="h-16 lg:h-20 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/Logo ITEP.png" alt=""
+                   className="h-16 lg:h-20 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/LogoInsti.png" alt=""
+                   className="h-14 lg:h-14 object-contain transition-all duration-300" />
+            </div>
+            <div className="flex-none flex justify-center items-center h-16 lg:h-20 min-w-[120px] lg:min-w-[160px]">
+              <img src="/lovable-uploads/catorio.png" alt=""
+                   className="h-14 lg:h-14 object-contain transition-all duration-300" />
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </AnimatedSection>
+
+    
+  </div>
+</section> */}
 
       {/* Team Section */}
       <section className="bg-gray-100 py-10 px-5 lg:py-20">

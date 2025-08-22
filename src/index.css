@@ -268,3 +268,15 @@ html {
 .bordrradius0{border-radius: 0 !important; border-top-right-radius:0 ; border-bottom-right-radius: 0;}
 .textosinternoblog p{margin-bottom: 15px;}
 .marginmarcadosblog{margin-bottom: 20px;}
+
+
+
+@keyframes scroll-continuous {
+  0%   { transform: translate3d(0,0,0); }
+  100% { transform: translate3d(-50%,0,0); } /* desloca 1 trilho exato */
+}
+
+.animate-scroll-continuous {
+  animation: scroll-continuous 20s linear infinite;
+  will-change: transform;
+}

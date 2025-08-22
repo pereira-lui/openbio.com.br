@@ -67,7 +67,47 @@ const BankingSolution = () => {
 
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 text-center">
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6  mx-auto">
+                      {/* Device Image 1 */}
+                      <motion.div
+                        className=" rounded-lg items-center justify-center"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                        viewport={{ once: true }}
+                      >
+                        <div className="relative rounded-lg overflow-hidden h-[360px] md:h-[480px] lg:h-[600px] bg-cover bg-center bg-black shadow" style={{
+                          backgroundImage: 'url(/lovable-uploads/card01.png)',
+                          backgroundPosition: 'center top',
+                          backgroundRepeat: 'no-repeat',
+                          backgroundSize: 'cover'
+                        }}></div>
+                        <h2 className='text-lg md:text-xl  text-black  font-semibold pt-3 pb-3 rounded-lg mt-6 text-center'>Lumidigm M421</h2>
+                      </motion.div>
+          
+                      {/* Device Image 2 */}
+                      <motion.div
+                        className=" rounded-lg items-center justify-center "
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.5 }}
+                        viewport={{ once: true }}
+                      >
+                        <div className="relative rounded-lg overflow-hidden h-[360px] md:h-[480px] lg:h-[600px] bg-cover bg-center bg-black shadow" style={{
+                          backgroundImage: 'url(http://localhost:8080/lovable-uploads/card02.png)',
+                          backgroundPosition: 'center top',
+                          backgroundRepeat: 'no-repeat',
+                          backgroundSize: 'cover'
+                        }}></div>
+                         <h2 className='text-lg md:text-xl  text-black  font-semibold pt-3 pb-3 rounded-lg mt-6 text-center'>Lumidigm V521</h2>
+                      </motion.div>
+          
+                      {/* Device Image 3 */}
+                      
+                    </div>
+ 
+          {/* <div className="grid md:grid-cols-2 gap-8 text-center">
             <AnimatedCard delay={0}>
               <div className="bg-gray-100 rounded-lg text-center">
                 <div className="w-full h-full bg-gray-100 rounded mx-auto flex items-center justify-center">
@@ -91,12 +131,12 @@ const BankingSolution = () => {
                 <h3 className="text-black font-medium text-xl pb-8 px-6 text-center">Lumidigm<br />V521</h3>
               </div>
             </AnimatedCard>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Diferenciais Section */}
-      <section className="bg-gray-100 py-16 px-5 lg:py-24">
+      <section className="bg-white py-16 px-5 lg:py-24">
         <div className="w-10/12 mx-auto">
           <AnimatedSection animation="fadeIn">
             <h2 className="text-black font-bold text-2xl mb-12 lg:text-4xl text-center">

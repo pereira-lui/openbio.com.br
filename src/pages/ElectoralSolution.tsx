@@ -45,15 +45,109 @@ const ElectoralSolution = () => {
       </section>
 
       {/* Timeline Section */}
-      <section className="bg-white py-16 px-5 lg:py-24">
+      {/* <section className="bg-white py-16 px-5 lg:py-24">
         <div className="w-10/12 mx-auto">
           <ProjectTimeline />
         </div>
-      </section>
+      </section> */}
+
+      {/* SEÇÃO BRANCA: Números + Descrição com linha roxa acima do título */}
+<section className="bg-white text-black py-12 lg:py-20">
+  <div className="w-10/12 mx-auto">
+    <ul className="divide-y divide-gray-200">
+      {/* Item 1 */}
+      <li className="py-6 lg:py-8 grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-4 lg:gap-6 items-start">
+        {/* coluna esquerda: número */}
+        <div>
+          <span className="block text-5xl lg:text-6xl font-bold leading-none text-black">
+            65 Mil
+          </span>
+          <span className="block text-sm lg:text-base text-gray-400 font-bold">
+            cadastramentos
+          </span>
+        </div>
+
+        {/* coluna direita: linha roxa + título + texto */}
+        <div className="mt-3 lg:mt-0">
+          <span className="block h-1 w-20 bg-[#7918f9] rounded-full mb-3" />
+          <h4 className="font-bold text-black text-base lg:text-lg mb-1">
+            <span className="text-black">2008</span> – Projeto Piloto
+          </h4>
+          <p className="text-gray-700 text-sm lg:text-base">
+            Para a fase de testes, 3 municípios brasileiros participaram com 65 mil cadastramentos feitos. Nesta etapa, 60 kits foram entregues.
+          </p>
+        </div>
+      </li>
+
+      {/* Item 2 */}
+      <li className="py-6 lg:py-8 grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-4 lg:gap-6 items-start">
+        <div>
+          <span className="block text-5xl lg:text-6xl font-bold leading-none text-black">
+            5 <span className="text-4xl lg:text-54xl">Milhões</span>
+          </span>
+          <span className="block text-sm lg:text-base text-gray-400 font-bold">
+            cadastros biométricos
+          </span>
+        </div>
+        <div className="mt-3 lg:mt-0">
+          <span className="block h-1 w-20 bg-[#7918f9] rounded-full mb-3" />
+          <h4 className="font-bold text-black text-base lg:text-lg mb-1">
+            <span className="text-black">2009 a 2012</span> – Identificação do Eleitor
+          </h4>
+          <p className="text-gray-700 text-sm lg:text-base">
+            Coletas realizadas em 330 municípios totalizando mais de 5 milhões de cadastros biométricos no período, foram entregues 2 mil kits.
+          </p>
+        </div>
+      </li>
+
+      {/* Item 3 */}
+      <li className="py-6 lg:py-8 grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-4 lg:gap-6 items-start">
+        <div>
+          <span className="block text-5xl lg:text-6xl font-bold leading-none text-black">
+            13 Mil
+          </span>
+          <span className="block text-sm lg:text-base text-gray-400 font-bold">
+            kits biométricos
+          </span>
+        </div>
+        <div className="mt-3 lg:mt-0">
+          <span className="block h-1 w-20 bg-[#7918f9] rounded-full mb-3" />
+          <h4 className="font-bold text-black text-base lg:text-lg mb-1">
+            <span className="text-black">2014</span> – Início do recadastramento dos eleitores
+          </h4>
+          <p className="text-gray-700 text-sm lg:text-base">
+            Foco no cadastramento em massa da população, foi a maior aquisição de kit biométrico do TSE, com cerca de 13 mil kits.
+          </p>
+        </div>
+      </li>
+
+      {/* Item 4 */}
+      <li className="py-6 lg:py-8 grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-4 lg:gap-6 items-start">
+        <div>
+          <span className="block text-5xl lg:text-6xl font-bold leading-none text-black">
+            12 Mil
+          </span>
+          <span className="block text-sm lg:text-base text-gray-400 font-bold">
+            kits distribuídos
+          </span>
+        </div>
+        <div className="mt-3 lg:mt-0">
+          <span className="block h-1 w-20 bg-[#7918f9] rounded-full mb-3" />
+          <h4 className="font-bold text-black text-base lg:text-lg mb-1">
+            <span className="text-black">2023 e 2024</span> – Atualização do parque de kits
+          </h4>
+          <p className="text-gray-700 text-sm lg:text-base">
+            Com o objetivo de cadastrar o restante da população, após 8 anos de utilização, 80% dos brasileiros já cadastrados, cerca de 12 mil kits distribuídos.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
 
       {/* Products Section */}
       <section className="bg-gray-100 py-16 px-5 lg:py-24">
-        <div className="lg:max-w-4xl 2xl:max-w-7xl mx-auto">
+        <div className="w-10/12 mx-auto">
           <AnimatedSection animation="fadeIn">
             <h2 className="text-black font-bold text-2xl mb-12 lg:text-4xl text-start">
               Produção de Produtos
